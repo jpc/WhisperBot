@@ -1,7 +1,9 @@
 #!/bin/bash -e
 
+: "${WHISPERFUSION_REPO:=https://github.com/collabora/WhisperFusion.git}"
+
 ## Clone this repo and install requirements
-[ -d "WhisperFusion" ] || git clone https://github.com/collabora/WhisperFusion.git
+[ -d "WhisperFusion" ] || git clone $WHISPERFUSION_REPO
 
 cd WhisperFusion
 apt update
