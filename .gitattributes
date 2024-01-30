@@ -1,0 +1,3 @@
+# Check out all shell scripts with UNIX line endings on Windows
+# This makes Docker happy
+*.sh text eol=lf
